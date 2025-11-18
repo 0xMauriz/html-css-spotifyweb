@@ -20,17 +20,39 @@ body {
 
 .application-and-topbar {
     width: 80%;
-    height: 1000px;
+    height: 900px;
 }
 
 .top-bar {
     width: 100%;
-    height: 10%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.upgrade-button-box {
+    display: flex;
+    height: 65%;
+    width: 100%;
+    align-items: center;
+}
+
+.upgrade-button {
+    color: white;
+}
+
+.navbar {
+    background-color: brown;
+    height: 35%;
+    width: 100%;
+}
+
 
 .application {
     width: 100%;
-    height: 90%;
+    height: 85%;
+    background-color: rgb(24, 24, 24);
 }
 
 
