@@ -8,16 +8,29 @@
     box-sizing: border-box;
 }
 
-.left-bar {
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 2000px;
+}
 
+.left-bar {
+    width: 20%;
+}
+
+.application-and-topbar {
+    width: 80%;
+    height: 1000px;
 }
 
 .top-bar {
-
+    width: 100%;
+    height: 10%;
 }
 
-.application-content {
-    
+.application {
+    width: 100%;
+    height: 90%;
 }
 
 
