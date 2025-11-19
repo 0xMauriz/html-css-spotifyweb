@@ -6,10 +6,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-}
 
 .jumbo {
     display: flex;
@@ -38,7 +37,7 @@ body {
 
 .top-bar {
     width: 100%;
-    height: 110px;
+    height: 120px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +56,7 @@ body {
 
 .upgrade-button-box {
     display: flex;
-    height: 100px;
+    height: 90px;
     width: 100%;
     padding-left: 75%;
     align-items: center;
@@ -71,6 +70,11 @@ body {
     padding: 10px 35px;
 }
 
+.navbar {
+    width: 100%;
+    height: 20px;
+}
+
 .music-page {
     width: 100%;
     height: calc(100vh - 190px);
@@ -78,6 +82,14 @@ body {
 }
 
 
+/* COLORS 
+
+topbar -> lightblack : rgb(8, 11, 18)
+navbar -> mirage : rgb(20, 25, 34)
+txt -> rgb(123, 125, 130)
+navbar -> glowing-green : rgb(20, 25, 34)
+
+*/
 
 /*DEBUG
 
