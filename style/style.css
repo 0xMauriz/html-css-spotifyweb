@@ -41,12 +41,10 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    padding-right: 20px;
 }
 
 .logo {
-    height: 
-    padding: ;
+
 }
 
 .logo img {
@@ -59,6 +57,7 @@
     height: 90px;
     width: 100%;
     padding-left: 75%;
+    padding-right: 20px;
     align-items: center;
 }
 
@@ -72,7 +71,8 @@
 
 .navbar {
     width: 100%;
-    height: 20px;
+    height: calc(100% - 90px);
+    background-color: rgb(24, 24, 24);
 }
 
 .music-page {
@@ -81,12 +81,16 @@
     padding-bottom: 50px;
 }
 
+.card {
+
+}
+
 
 /* COLORS 
 
 topbar -> lightblack : rgb(8, 11, 18)
 navbar -> mirage : rgb(20, 25, 34)
-txt -> rgb(123, 125, 130)
+txt -> lightgray rgb(123, 125, 130)
 navbar -> glowing-green : rgb(20, 25, 34)
 
 */
