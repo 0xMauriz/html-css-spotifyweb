@@ -2,12 +2,21 @@
     Desktop version, width 990px
 *******************************/
 
+/* REGOLE GENERALI */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+
+h2 {
+    color: white;
+}
+
+/* FINE REGOLE GENERALI */
 
 
 .jumbo {
@@ -36,7 +45,7 @@
 }
 
 .app-actions {
-    height: 150px;
+    height: 120px;
 }
 
 .general-action {
@@ -44,14 +53,105 @@
     align-items: center;
     color: gray;
     height: calc(100% / 3);
-    font-size: 23px;
     padding-left: 15px;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.app-actions img {
+    height: 65%;
+}
+
+.home-nohover {
+    height: 65%;
 }
 
 .general-action-txt {
     font-size: 13px;
     padding-left: 5px;
     font-weight: 700;
+}
+
+.playlist-and-profile-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+}
+
+.create-playlist {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.playlists-box h2 {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.playlists-box li {
+    margin-top: 13px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    color: gray;
+}
+
+.profile-box {
+    height: 90px;
+    padding: 10px 5px 15px 5px;
+    margin: 10px 0 20px 0;
+}
+
+.profile-box svg {
+    width: 50px;
+    height: 50%;
+}
+
+/*
+.profile svg {
+    background-color: gray;
+    color: white;
+    border-radius: 50px;
+}
+*/
+
+.appinstall {
+    display: flex;
+    border-bottom: 1px solid gray;
+    flex-wrap: nowrap;
+
+}
+
+.appinstall-txt {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    width: 40%;
+    align-items: center;
+}
+
+.download-icon {
+}
+
+.profile {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.somemargin {
+    margin-left: 5px;
+}
+
+.fa-square-plus {
+    color: gray;
+    background-color: black;
+    font-size: 35px;
 }
 
 .home {
@@ -78,7 +178,7 @@
 
 .upgrade-button-box {
     display: flex;
-    height: 90px;
+    height: 80px;
     width: 100%;
     padding-left: 75%;
     padding-right: 20px;
@@ -94,9 +194,19 @@
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     width: 100%;
-    height: calc(100% - 90px);
+    font-weight: 700;
+    height: calc(100% - 80px);
     background-color: rgb(24, 24, 24);
+    color: gray;
+}
+
+.navbar :first-child {
+    border-bottom: 3px solid rgb(67, 255, 50)
 }
 
 .music-page {
@@ -106,6 +216,22 @@
 .card {
 
 }
+
+
+/*
+
+.addbutton {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: gray;
+}
+
+*/
+
+
 
 
 /* COLORS 
