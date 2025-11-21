@@ -12,8 +12,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.white-txt {
+    color: white;
+}
+
+.gray-txt {
+    color: gray;
+}
+
 h2 {
     color: white;
+}
+
+.somemargin {
+    margin-left: 5px;
 }
 
 /* FINE REGOLE GENERALI */
@@ -25,13 +37,9 @@ h2 {
     height: calc(100% - 70px);
 }
 
-.music-player {
-    background-color: red; /* DEBUG */
-    height: 70px;
-}
-
 .left-bar {
     width: 200px;
+    height: calc(100vh - 70px);
     background-color: black;
 }
 
@@ -75,7 +83,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 460px;
+    height: 74%;
 }
 
 .create-playlist {
@@ -86,6 +94,10 @@ h2 {
     color: gray;
     margin-top: 10px;
     padding: 7px;
+}
+
+.playlists-box {
+    height: 40%;
 }
 
 .playlists-box h2 {
@@ -103,9 +115,8 @@ h2 {
 }
 
 .profile-box {
-    height: 90px;
+    height: 30%;
     padding: 10px 5px 15px 5px;
-    margin: 10px 0 20px 0;
 }
 
 .profile-box svg {
@@ -142,10 +153,6 @@ h2 {
 .profile {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.somemargin {
-    margin-left: 5px;
 }
 
 .fa-square-plus {
@@ -213,92 +220,93 @@ h2 {
     height: calc(100% - 190px);
 }
 
+.recently-played {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.recently-played h2 {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.recently-played h3 {
+    width: 100%;
+    margin: 30px 0 30px 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.recently-played p {
+    color: gray;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 6px;
+    text-align: center;
+}
+
 .card {
-
-}
-
-
-/*
-
-.addbutton {
-    width: 20%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: gray;
+    width: calc((100% / 6) - 200px / 6);
+    flex-direction: column;
 }
 
-*/
-
-
-
-
-/* COLORS 
-
-topbar -> lightblack : rgb(8, 11, 18)
-navbar -> mirage : rgb(20, 25, 34)
-txt -> lightgray rgb(123, 125, 130)
-navbar -> glowing-green : rgb(20, 25, 34)
-
-*/
-
-/*DEBUG
-
-body {
+.created-by-you, .popular-artists {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 40px;
 }
 
-.application-and-topbar {
-    width: 80%;
-    height: 900px;
+.card-second-type {
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
-.top-bar {
+.created-by-you h3, .popular-artists h3 {
+    margin-left: 30px;
+}
+
+.created-by-you p, .popular-artists p {
+    margin-left: 30px;
     width: 100%;
-    height: 15%;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
-.upgrade-button-box {
-    display: flex;
-    height: 65%;
+.created-by-you h2, .popular-artists h2 {
     width: 100%;
-    padding-left: 75%;
-    align-items: center;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
-.upgrade-button {
-    color: rgb(156, 156, 156);
-    background-color: black;
-    border: 1px solid rgb(156, 156, 156);
-    border-radius: 50px;
-    padding: 10px 35px;
+.round-img {
+    border-radius: 200px;
 }
 
-.navbar {
-    display: flex;
-    background-color: brown;
-    height: 35%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-.navbar-txt {
-
-}
-
-
-.application {
-    width: 100%;
-    height: 300vh;
+.music-player {
+    position: sticky;
     background-color: rgb(24, 24, 24);
+    height: 70px;
+    padding: 14px 10px 9px 10px;
 }
 
-*/
+.listening-to {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    font-size: 13px;
+}
 
+.listening-to img {
+    width: 22%;
+}
+
+.listening-to h2, .listening-to p, .listening-to i {
+    margin-left: 10px;
+}
